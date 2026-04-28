@@ -1,0 +1,15 @@
+<li [class.completed]="task.done">
+
+  {{ task.title }}
+
+  <span *ngIf="task.done">✔</span>
+
+  <button (click)="onToggle()">
+    Toggle
+  </button>
+
+  <button (click)="onDelete()">
+    Delete
+  </button>
+
+</li>
