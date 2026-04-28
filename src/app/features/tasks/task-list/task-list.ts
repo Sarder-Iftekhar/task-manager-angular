@@ -17,6 +17,7 @@ export class TaskList {
   ];
 
   toggleTask(task: any) {
+    console.log("Parent received:", task);
     task.done = !task.done;
   }
 

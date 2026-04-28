@@ -16,6 +16,7 @@ export class TaskItem {
   @Output() delete = new EventEmitter<number>();
 
   onToggle() {
+    console.log("Child emitting:", this.task);
     this.toggle.emit(this.task);
   }
 
