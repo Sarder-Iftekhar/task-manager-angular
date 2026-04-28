@@ -13,7 +13,8 @@ export class TaskList {
 
     tasks = [
     { id: 1, title: "Learn Angular", done: false },
-    { id: 2, title: "Build App", done: true }
+    { id: 2, title: "Build App", done: true },
+    { id: 3, title: "Fix Bugs", done: false }
   ];
 
   toggleTask(task: any) {
