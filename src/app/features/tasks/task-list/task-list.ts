@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { TaskItem } from '../task-item/task-item';
 
 @Component({
+  standalone: true,
   selector: 'app-task-list',
   imports: [CommonModule, FormsModule, TaskItem],
   templateUrl: './task-list.html',
-  styleUrl: './task-list.css',
+  styleUrls: ['./task-list.css'],
 })
 export class TaskList {
 
